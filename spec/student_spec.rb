@@ -30,9 +30,9 @@ describe "aggregate functions sql" do
       expect(@db.execute(total_tardies_for_all_students)).to eq([[49]])
     end
   end
-  describe "#average_gpa_for_9th_grade" do
-    it 'find the average gpa for 9th grade' do
-      expect(@db.execute(average_gpa_for_9th_grade).first.first).to be_within(0.0001).of(3.3)
+  describe "#average_gpa_for_10th_grade" do
+    it 'find the average gpa for 10th grade' do
+      expect(@db.execute(average_gpa_for_10th_grade).first.first).to be_within(0.0001).of(3.3)
     end
   end
 
