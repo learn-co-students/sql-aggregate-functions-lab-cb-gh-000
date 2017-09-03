@@ -12,12 +12,12 @@ describe "aggregate functions sql" do
 
   describe "#highest_student_gpa" do
     it 'finds the highest gpa' do
-      expect(@db.execute(highest_student_gpa)).to eq([[4.0]])
+      expect(@db.execute(lowest_student_gpa)).to eq([[4.0]])
     end
   end
   describe "#lowest_student_gpa" do
     it 'finds the lowest gpa' do
-      expect(@db.execute(lowest_student_gpa)).to eq([[1.9]])
+      expect(@db.execute(highest_student_gpa)).to eq([[1.9]])
     end
   end
   describe "#average_student_gpa" do
